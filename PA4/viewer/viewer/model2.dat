@@ -1,0 +1,19 @@
+camera orthographic 	5 -5 5 	0.5 0 1.5 	0 0 1 	4.5  1 20
+
+resolution  	0.0275 0.0275
+viewport  	256 256
+
+light ID 0 pnt 	0 -10 -4 	0 10 4		1 1 1 	1 0 0 	10	shadow_off
+light ID 1 pnt 	4 2  10 	-2 -2 -10 		1 1 1 	1 0 0 	10 	shadow_off
+light ID 2 amb  0 0 0 0 0 0  0.2 0.2 0.2 1 0 0 0 shadow_off
+
+mat ID 0 	1 1 1 	0.3 0.8 0.5 	20 0.4 0.6 1.23
+mat ID 1 	0.5 1 0.5 	0.1 0.5 0.2 5	0 0 0 
+mat ID 2 	0.5 1 0.5 	0.1 0.5 0.8 10	0 0 0 
+mat ID 3 	0.5 1 0.5 	0.1 0.5 0.8 50	0 0 0 
+
+obj cylinder ID 2 mat ID 3 		-2 0 1.75 	0 0 1 	0.5 4
+obj cylinder ID 3 mat ID 2 		0 0 1.75 	0 0 1 	0.5 4
+obj cylinder ID 4 mat ID 1 		2 0 1.75 	0 0 1 	0.5 4
+obj box ID 5 mat ID 0	0 0 1.75 	1 0 0 0 1 0 0 0 1 6 2 2
+
